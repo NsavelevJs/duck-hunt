@@ -26,6 +26,35 @@ window.onload = function () {
   for (let i = 1; i < 5; i++) {
     createDuck();
   }
+  let duck = document.querySelectorAll("div")
+  console.log(duck)
+  duck.forEach(duck => {duck.addEventListener("click", (e) => {
+    e.target.className += " shot"
+    checkForWinner()
+  });
+  });
+  
+    duck.forEach(duck=>{
+      duck.addEventListener("click",(e) =>{
+        setTimeout(()=>{
+        e.target.remove()
+        checkForWinner()
+      },1000)
+      checkForWinner()
+    })
+    
+  })
 
+
+
+
+
+  function checkForWinner() {
+  
+    if(document.querySelectorAll("div").length === 0){
+      alert("Looks like you're the winner in the room")
+      
+    }
+  }
 
 };

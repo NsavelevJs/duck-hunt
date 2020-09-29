@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./duckhunt" ;
 import "./duckhunt.css";
 
 function App() {
