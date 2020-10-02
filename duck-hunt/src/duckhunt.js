@@ -19,7 +19,7 @@ window.onload = function () {
       div.style.left = innerWidth + "px";
     }
     moveDuck();
-    setInterval(moveDuck, 1000);
+    setInterval(moveDuck, 1200);
   }
   createDuck();
 
@@ -50,11 +50,11 @@ window.onload = function () {
 
 
   function checkForWinner() {
-  
     if(document.querySelectorAll("div").length === 0){
       alert("Looks like you're the winner in the room")
-      
     }
   }
+
+ 
 
 };
